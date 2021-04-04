@@ -6,12 +6,14 @@
 /*   By: yarroubi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/12 13:36:37 by yarroubi          #+#    #+#             */
-/*   Updated: 2019/10/22 21:55:13 by yarroubi         ###   ########.fr       */
+/*   Updated: 2021/04/04 21:20:29 by youness          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+
+#include <stdio.h>
 
 # include <stddef.h>
 # include <stdlib.h>
@@ -22,6 +24,9 @@ typedef	struct	s_list
 	void			*content;
 	struct s_list	*next;
 }				t_list;
+
+void			ft_iswap(int *a, int *b);
+void			ft_quick_sort(int *arr, int size);
 
 int				ft_isalpha(int c);
 int				ft_isalnum(int c);
