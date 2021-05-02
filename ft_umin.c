@@ -1,22 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_umin.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yarroubi <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: youness <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/09 22:07:44 by yarroubi          #+#    #+#             */
-/*   Updated: 2021/05/02 17:05:24 by yarroubi         ###   ########.fr       */
+/*   Created: 2021/03/22 21:46:48 by youness           #+#    #+#             */
+/*   Updated: 2021/05/02 16:53:12 by yarroubi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "support_functions.h"
 
-int	ft_isalpha(int c)
+unsigned long long	ft_umin(unsigned long long a, unsigned long long b)
 {
-	if (c >= 'a' && c <= 'z')
-		return (1);
-	if (c >= 'A' && c <= 'Z')
-		return (1);
-	return (0);
+	if (a < b)
+		return (a);
+	return (b);
 }

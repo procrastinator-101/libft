@@ -1,22 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_issign.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yarroubi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/09 22:07:44 by yarroubi          #+#    #+#             */
-/*   Updated: 2021/05/02 17:05:24 by yarroubi         ###   ########.fr       */
+/*   Created: 2021/01/02 09:55:00 by yarroubi          #+#    #+#             */
+/*   Updated: 2021/05/02 17:07:57 by yarroubi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "support_functions.h"
 
-int	ft_isalpha(int c)
+int	ft_issign(char c)
 {
-	if (c >= 'a' && c <= 'z')
-		return (1);
-	if (c >= 'A' && c <= 'Z')
-		return (1);
-	return (0);
+	return (c == '-' || c == '+');
 }
