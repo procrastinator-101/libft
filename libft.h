@@ -6,7 +6,7 @@
 /*   By: yarroubi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/12 13:36:37 by yarroubi          #+#    #+#             */
-/*   Updated: 2021/05/02 17:03:15 by yarroubi         ###   ########.fr       */
+/*   Updated: 2021/05/02 17:10:18 by yarroubi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,11 @@ typedef struct s_list
 **	checked newly functions
 */
 
+int					ft_isalpha(int c);
+int					ft_isalnum(int c);
+int					ft_isascii(int c);
+int					ft_isdigit(int c);
+int					ft_isprint(int c);
 int					ft_issign(char c);
 int					ft_isnumber(char *num);
 int					ft_strcmp(const char *s1, const char *s2);
@@ -47,11 +52,6 @@ unsigned long long	ft_umax(unsigned long long a, unsigned long long b);
 void				ft_iswap(int *a, int *b);
 void				ft_quick_sort(int *arr, int size);
 
-int					ft_isalpha(int c);
-int					ft_isalnum(int c);
-int					ft_isascii(int c);
-int					ft_isdigit(int c);
-int					ft_isprint(int c);
 int					ft_tolower(int c);
 int					ft_toupper(int c);
 void				ft_bzero(void *s, size_t n);
