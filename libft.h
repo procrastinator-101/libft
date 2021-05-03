@@ -6,7 +6,7 @@
 /*   By: yarroubi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/12 13:36:37 by yarroubi          #+#    #+#             */
-/*   Updated: 2021/05/03 08:25:12 by yarroubi         ###   ########.fr       */
+/*   Updated: 2021/05/03 11:01:11 by yarroubi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,9 @@ long long			ft_min(long long a, long long b);
 long long			ft_max(long long a, long long b);
 unsigned long long	ft_umin(unsigned long long a, unsigned long long b);
 unsigned long long	ft_umax(unsigned long long a, unsigned long long b);
+
+void				ft_lst_remove_back(t_list **tail, void (*del)(void*));
+void				ft_lst_remove_front(t_list **tail, void (*del)(void*));
 /*
 **	end checked newly functions
 */
