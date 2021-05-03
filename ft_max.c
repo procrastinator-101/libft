@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "support_functions.h"
+#include "libft.h"
 
 long long	ft_max(long long a, long long b)
 {

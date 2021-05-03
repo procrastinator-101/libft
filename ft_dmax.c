@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "support_functions.h"
+#include "libft.h"
 
 double	ft_dmax(double a, double b)
 {

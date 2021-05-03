@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "support_functions.h"
+#include "libft.h"
 
 int	ft_isnumber(char *num)
 {

@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "support_functions.h"
+#include "libft.h"
 
 unsigned long long	ft_umax(unsigned long long a, unsigned long long b)
 {

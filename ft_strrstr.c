@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "support_functions.h"
+#include "libft.h"
 
 /*
 ** this function looks for the last occurence of needle in the haystack
