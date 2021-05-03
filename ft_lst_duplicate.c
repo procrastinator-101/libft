@@ -1,38 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lst_remove_back.c                               :+:      :+:    :+:   */
+/*   ft_lst_duplicate.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yarroubi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/03 10:42:45 by yarroubi          #+#    #+#             */
-/*   Updated: 2021/05/03 11:14:10 by yarroubi         ###   ########.fr       */
+/*   Created: 2021/05/03 12:43:25 by yarroubi          #+#    #+#             */
+/*   Updated: 2021/05/03 12:50:05 by yarroubi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lst_remove_back(t_list **tail, void (*del)(void*))
+t_list	*ft_lst_duplicate(t_list *src)
 {
-	t_list	*head;
+	t_list	*dst;
+	t_list	*node;
 
-	if (!(*tail))
-		return ;
-	head = *tail;
-	if (!head->next)
+	dst = NULL;
+	while (src)
 	{
-		del(head->content);
-		free(head);
-		*tail = 0;
-		return ;
+		node = ft_lstnew(src->content);
+		if (!node)
+		{
+			ft_lstclear(&dst, free);
+			return (0);
+		}
+		node->next = 0;
+		ft_lstadd_back(&dst, node);
+		src = src->next;
 	}
-	while (head->next)
-	{
-		if (!head->next->next)
-			break ;
-		head = head->next;
-	}
-	del(head->next->content);
-	free(head->next);
-	head->next = 0;
+	return (dst);
 }
