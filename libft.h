@@ -6,7 +6,7 @@
 /*   By: yarroubi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/12 13:36:37 by yarroubi          #+#    #+#             */
-/*   Updated: 2021/05/02 17:10:18 by yarroubi         ###   ########.fr       */
+/*   Updated: 2021/05/03 08:25:12 by yarroubi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ typedef struct s_list
 **	checked newly functions
 */
 
+int					ft_isspace(int c);
 int					ft_isalpha(int c);
 int					ft_isalnum(int c);
 int					ft_isascii(int c);

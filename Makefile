@@ -6,7 +6,7 @@
 #    By: yarroubi <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/13 21:04:47 by yarroubi          #+#    #+#              #
-#    Updated: 2021/05/03 07:44:40 by yarroubi         ###   ########.fr        #
+#    Updated: 2021/05/03 08:25:38 by yarroubi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,6 +24,7 @@ SRC = ft_atoi.c \
 	  ft_isnumber.c \
 	  ft_isprint.c \
 	  ft_issign.c \
+	  ft_isspace.c \
 	  ft_iswap.c \
 	  ft_itoa.c \
 	  ft_lstadd_back_bonus.c \
