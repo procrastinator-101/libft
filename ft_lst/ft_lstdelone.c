@@ -1,24 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstlast_bonus.c                                 :+:      :+:    :+:   */
+/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yarroubi <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: youness <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/12 17:34:37 by yarroubi          #+#    #+#             */
-/*   Updated: 2021/05/04 17:45:33 by youness          ###   ########.fr       */
+/*   Created: 2021/05/04 23:24:52 by youness           #+#    #+#             */
+/*   Updated: 2021/05/04 23:24:52 by youness          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_lst.h"
 
-t_list	*ft_lstlast(t_list *tail)
+void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {
-	while (tail)
+	if (lst)
 	{
-		if (!tail->next)
-			return (tail);
-		tail = tail->next;
+		del(lst->content);
+		free(lst);
 	}
-	return (tail);
 }

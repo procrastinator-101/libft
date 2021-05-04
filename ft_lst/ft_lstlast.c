@@ -1,22 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front_bonus.c                            :+:      :+:    :+:   */
+/*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yarroubi <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: youness <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/12 16:48:14 by yarroubi          #+#    #+#             */
-/*   Updated: 2021/05/04 17:21:19 by youness          ###   ########.fr       */
+/*   Created: 2021/05/04 23:24:52 by youness           #+#    #+#             */
+/*   Updated: 2021/05/04 23:24:52 by youness          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_lst.h"
 
-void	ft_lstadd_front(t_list **tail, t_list *new)
+t_list	*ft_lstlast(t_list *tail)
 {
-	if (new)
+	while (tail)
 	{
-		new->next = *tail;
-		*tail = new;
+		if (!tail->next)
+			return (tail);
+		tail = tail->next;
 	}
+	return (tail);
 }
