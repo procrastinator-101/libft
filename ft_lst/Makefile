@@ -6,7 +6,7 @@
 #    By: yarroubi <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/13 21:04:47 by yarroubi          #+#    #+#              #
-#    Updated: 2021/05/05 14:04:56 by youness          ###   ########.fr        #
+#    Updated: 2021/05/05 14:54:32 by youness          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,7 +39,7 @@ $(NAME):$(OBJ)
 	@$(CC) -o $@ -c $< $(CFLAGS)
 
 clean:
-	@rm -rf $(OBJ) $(BONUS_OBJ)
+	@rm -rf $(OBJ)
 
 fclean: clean
 	@rm -rf $(NAME)
