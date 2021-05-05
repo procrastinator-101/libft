@@ -6,22 +6,24 @@
 #    By: yarroubi <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/13 21:04:47 by yarroubi          #+#    #+#              #
-#    Updated: 2021/05/05 14:36:15 by youness          ###   ########.fr        #
+#    Updated: 2021/05/05 14:04:56 by youness          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = libft.a
+NAME = ft_lst.a
 
-FT_LST_PATH = ft_lst
-FT_MATH_PATH = ft_math
-FT_CTYPE_PATH = ft_ctype
-FT_STDIO_PATH = ft_stdio
-FT_STDLIB_PATH = ft_stdlib
-FT_STRING_PATH = ft_string
-FT_ALGORITHMS_PATH = ft_algorithms
-
-
-SRC = 
+SRC = ft_lstadd_back.c \
+	  ft_lstadd_front.c \
+	  ft_lstclear.c \
+	  ft_lstdel_back.c \
+	  ft_lstdel_front.c \
+	  ft_lstdelone.c \
+	  ft_lstduplicate.c \
+	  ft_lstiter.c \
+	  ft_lstlast.c \
+	  ft_lstmap.c \
+	  ft_lstnew.c \
+	  ft_lstsize.c
 
 OBJ = $(SRC:.c=.o)
 

@@ -6,22 +6,16 @@
 #    By: yarroubi <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/13 21:04:47 by yarroubi          #+#    #+#              #
-#    Updated: 2021/05/05 14:36:15 by youness          ###   ########.fr        #
+#    Updated: 2021/05/05 14:18:02 by youness          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = libft.a
+NAME = ft_stdio.a
 
-FT_LST_PATH = ft_lst
-FT_MATH_PATH = ft_math
-FT_CTYPE_PATH = ft_ctype
-FT_STDIO_PATH = ft_stdio
-FT_STDLIB_PATH = ft_stdlib
-FT_STRING_PATH = ft_string
-FT_ALGORITHMS_PATH = ft_algorithms
-
-
-SRC = 
+SRC = ft_putchar_fd.c \
+	  ft_putendl_fd.c \
+	  ft_putnbr_fd.c \
+	  ft_putstr_fd.c
 
 OBJ = $(SRC:.c=.o)
 

@@ -1,29 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstclear.c                                      :+:      :+:    :+:   */
+/*   ft_algorithms.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: youness <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/04 23:24:51 by youness           #+#    #+#             */
-/*   Updated: 2021/05/05 14:07:30 by youness          ###   ########.fr       */
+/*   Created: 2021/05/05 13:47:50 by youness           #+#    #+#             */
+/*   Updated: 2021/05/05 13:51:14 by youness          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_lst.h"
+#ifndef FT_ALGORITHMS_H
+# define FT_ALGORITHMS_H
 
-void	ft_lstclear(t_list **tail, void (*del)(void*))
-{
-	t_list	*next;
-	t_list	*head;
+# include "../ft_stdlib/ft_stdlib.h"
 
-	head = *tail;
-	while (head)
-	{
-		next = head->next;
-		del(head->content);
-		free(head);
-		head = next;
-	}
-	*tail = 0;
-}
+void	ft_quick_sort(int *arr, int size);
+
+#endif

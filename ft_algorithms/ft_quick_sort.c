@@ -6,11 +6,11 @@
 /*   By: youness <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/04 00:37:20 by youness           #+#    #+#             */
-/*   Updated: 2021/04/04 21:57:59 by youness          ###   ########.fr       */
+/*   Updated: 2021/05/05 13:51:36 by youness          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_algorithms.h"
 
 static int	ft_partition(int *arr, int size)
 {

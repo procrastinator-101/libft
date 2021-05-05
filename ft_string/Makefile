@@ -6,22 +6,34 @@
 #    By: yarroubi <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/13 21:04:47 by yarroubi          #+#    #+#              #
-#    Updated: 2021/05/05 14:36:15 by youness          ###   ########.fr        #
+#    Updated: 2021/05/05 14:21:57 by youness          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = libft.a
+NAME = ft_string.a
 
-FT_LST_PATH = ft_lst
-FT_MATH_PATH = ft_math
-FT_CTYPE_PATH = ft_ctype
-FT_STDIO_PATH = ft_stdio
-FT_STDLIB_PATH = ft_stdlib
-FT_STRING_PATH = ft_string
-FT_ALGORITHMS_PATH = ft_algorithms
-
-
-SRC = 
+SRC = ft_bzero.c \
+	  ft_memccpy.c \
+	  ft_memchr.c \
+	  ft_memcmp.c \
+	  ft_memcpy.c \
+	  ft_memmove.c \
+	  ft_memset.c \
+	  ft_split.c \
+	  ft_strchr.c \
+	  ft_strcmp.c \
+	  ft_strdup.c \
+	  ft_strjoin.c \
+	  ft_strlcat.c \
+	  ft_strlcpy.c \
+	  ft_strlen.c \
+	  ft_strmapi.c \
+	  ft_strncmp.c \
+	  ft_strnstr.c \
+	  ft_strrchr.c \
+	  ft_strrstr.c \
+	  ft_strtrim.c \
+	  ft_substr.c
 
 OBJ = $(SRC:.c=.o)
 
