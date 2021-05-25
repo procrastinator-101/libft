@@ -6,7 +6,7 @@
 /*   By: yarroubi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/25 14:47:53 by yarroubi          #+#    #+#             */
-/*   Updated: 2021/05/25 14:52:24 by yarroubi         ###   ########.fr       */
+/*   Updated: 2021/05/25 15:24:12 by yarroubi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ char	*ft_strndup(const char *str, size_t n)
 	if (!ptr)
 		return (0);
 	ptr[i] = 0;
-	while (--i >= 0)
+	while (i--)
 		ptr[i] = str[i];
 	return (ptr);
 }
