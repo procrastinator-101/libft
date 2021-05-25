@@ -6,7 +6,7 @@
 #    By: yarroubi <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/13 21:04:47 by yarroubi          #+#    #+#              #
-#    Updated: 2021/05/05 14:53:12 by youness          ###   ########.fr        #
+#    Updated: 2021/05/25 14:52:49 by yarroubi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,6 +29,7 @@ SRC = ft_bzero.c \
 	  ft_strlen.c \
 	  ft_strmapi.c \
 	  ft_strncmp.c \
+	  ft_strndup.c \
 	  ft_strnstr.c \
 	  ft_strrchr.c \
 	  ft_strrstr.c \
