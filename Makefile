@@ -6,7 +6,7 @@
 #    By: yarroubi <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/13 21:04:47 by yarroubi          #+#    #+#              #
-#    Updated: 2021/05/05 15:48:40 by youness          ###   ########.fr        #
+#    Updated: 2021/05/25 15:25:26 by yarroubi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -87,6 +87,7 @@ FT_STRING_SRC = $(FT_STRING_PATH)/ft_bzero.c \
 				$(FT_STRING_PATH)/ft_strlen.c \
 				$(FT_STRING_PATH)/ft_strmapi.c \
 				$(FT_STRING_PATH)/ft_strncmp.c \
+				$(FT_STRING_PATH)/ft_strndup.c \
 				$(FT_STRING_PATH)/ft_strnstr.c \
 				$(FT_STRING_PATH)/ft_strrchr.c \
 				$(FT_STRING_PATH)/ft_strrstr.c \
