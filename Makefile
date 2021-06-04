@@ -6,7 +6,7 @@
 #    By: yarroubi <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/13 21:04:47 by yarroubi          #+#    #+#              #
-#    Updated: 2021/05/25 15:25:26 by yarroubi         ###   ########.fr        #
+#    Updated: 2021/06/04 15:56:13 by yarroubi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -66,6 +66,7 @@ FT_STDIO_SRC = $(FT_STDIO_PATH)/ft_putchar_fd.c \
 			   $(FT_STDIO_PATH)/ft_putstr_fd.c
 
 FT_STDLIB_SRC = $(FT_STDLIB_PATH)/ft_atoi.c \
+				$(FT_STDLIB_PATH)/ft_atoi_base.c \
 				$(FT_STDLIB_PATH)/ft_calloc.c \
 				$(FT_STDLIB_PATH)/ft_iswap.c \
 				$(FT_STDLIB_PATH)/ft_itoa.c

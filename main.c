@@ -6,7 +6,7 @@
 /*   By: youness <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/04 23:24:19 by youness           #+#    #+#             */
-/*   Updated: 2021/05/04 23:24:19 by youness          ###   ########.fr       */
+/*   Updated: 2021/06/04 16:09:31 by yarroubi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,6 @@
 
 int main()
 {
-	int	arr[] = {5, 8, 3, 2, 1, 7};
-	int size =  sizeof(arr) / sizeof(int);
-
-	ft_quick_sort(arr, size);
-	for (int i = 0; i < size; i++)
-		printf("%d ", arr[i]);
-	printf("\n");
+	printf("nb = %d\n", ft_atoi_base("  \t\t\v-0125000p", "0123456789"));
+	return (0);
 }
