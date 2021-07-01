@@ -6,14 +6,14 @@
 /*   By: youness <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/04 23:24:19 by youness           #+#    #+#             */
-/*   Updated: 2021/06/04 16:09:31 by yarroubi         ###   ########.fr       */
+/*   Updated: 2021/07/01 16:40:49 by yarroubi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
 
-int main()
+int	main(void)
 {
 	printf("nb = %d\n", ft_atoi_base("  \t\t\v-0125000p", "0123456789"));
 	return (0);

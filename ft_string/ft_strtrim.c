@@ -6,7 +6,7 @@
 /*   By: yarroubi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/11 11:29:55 by yarroubi          #+#    #+#             */
-/*   Updated: 2019/10/21 14:26:53 by yarroubi         ###   ########.fr       */
+/*   Updated: 2021/07/01 16:26:55 by yarroubi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 static int	st_en(char const *s1, char const *set, int p, int start)
 {
-	int set_len;
-	int bound;
-	int i;
-	int k;
+	int	i;
+	int	k;
+	int	bound;
+	int	set_len;
 
 	bound = (int)ft_strlen(s1);
 	set_len = (int)ft_strlen(set);
@@ -37,10 +37,10 @@ static int	st_en(char const *s1, char const *set, int p, int start)
 	return (i);
 }
 
-char		*ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
-	int start;
-	int end;
+	int	start;
+	int	end;
 
 	if (!s1 || !set)
 		return (0);

@@ -6,7 +6,7 @@
 /*   By: youness <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/05 14:22:12 by youness           #+#    #+#             */
-/*   Updated: 2021/05/25 14:53:23 by yarroubi         ###   ########.fr       */
+/*   Updated: 2021/07/01 16:33:11 by yarroubi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,5 @@ char	*ft_strndup(const char *str, size_t n);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	**ft_split(char const *s, char c);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
-
 
 #endif
